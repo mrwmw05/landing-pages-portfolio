@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+
+<html lang="RU">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Москитные сетки — сетки-гармошки для окон, дверей и террас</title>
+  <link href="img/favicon.svg" rel="apple-touch-icon" sizes="180x180" type="image/svg+xml" />
+  <link href="img/favicon.svg" rel="icon" sizes="32x32" type="image/svg+xml" />
+  <link href="img/favicon.svg" rel="icon" sizes="16x16" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+    as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+  <meta content="noindex, nofollow" name="robots" />
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo"><img alt="" class="navbar__img-logo" src="img/logo.svg" />Москитные
+        сетки</a>
+      <span class="demo-contact"></span>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a class="navbar__links" href="#features">Преимущества</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__links" href="#gallery">Наши решения</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__links" href="#how-it-works">Как это работает</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__links" href="#versatility">Универсальность</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__links" href="#calculator">Калькулятор</a>
+        </li>
+      </ul>
+      <div class="contact-modal" id="contactModal">
+        <div class="modal-overlay" onclick="closeForm()"></div>
+        <div class="modal-content">
+          <span class="modal-close" onclick="closeForm()">×</span>
+          <h3 class="modal-title">Обсудим сетку для вашего проёма?</h3>
+          <h4>Укажите удобный способ связи — и мы поможем подобрать решение.</h4>
+          <form autocomplete="off" class="contact-form" data-demo="true" id="contactForm" novalidate="">
+            <div class="form-group">
+              <input aria-label="Поле недоступно: показ интерфейса без отправки данных" autocomplete="off" id="name"
+                placeholder="Ваше имя" readonly="" type="text" />
+              <small class="error-message" id="nameError"></small>
+            </div>
+            <div class="form-group">
+              <input aria-label="Поле недоступно: показ интерфейса без отправки данных" autocomplete="off" id="phone"
+                placeholder="+7 (___) ___-__-__" readonly="" type="text" />
+              <small class="error-message" id="phoneError"></small>
+            </div>
+            <p class="form-disclaimer">Презентационный сайт: поля и отправка отключены. <a
+                href="privacy.html">Подробнее</a></p>
+            <button class="submit-btn" type="submit">Посмотреть отклик</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <!-- Фоновый слайдер -->
+    <div class="hero__slides">
+      <div class="hero__slide active" data-caption="Свет и воздух">
+        <img alt="Иллюстрация варианта сетки-плиссе" src="img/cheetah.svg" />
+      </div>
+      <div class="hero__slide" data-caption="Тихое движение">
+        <img alt="Иллюстрация варианта сетки-плиссе" decoding="async" loading="lazy" src="img/window3.svg" />
+      </div>
+      <div class="hero__slide" data-caption="Детали имеют значение">
+        <img alt="Иллюстрация варианта сетки-плиссе" decoding="async" loading="lazy" src="img/pic2-2.svg" />
+      </div>
+      <div class="hero__slide" data-caption="Свобода открытого пространства">
+        <img alt="Иллюстрация варианта сетки-плиссе" decoding="async" loading="lazy" src="img/door.svg" />
+      </div>
+      <div class="hero__slide" data-caption="Комфорт в каждой комнате">
+        <img alt="Иллюстрация варианта сетки-плиссе" decoding="async" loading="lazy" src="img/pic3.svg" />
+      </div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__in">
+      <div class="hero__eyebrow">Решения для окон, дверей и террас</div>
+      <h1 class="hero__title">
+        <span class="line"><span>Сетки-гармошки (плиссе)</span></span>
+        <span class="line"><span>на окна, двери</span></span>
+        <span class="line"><span class="accent">и веранды</span></span>
+      </h1>
+      <p class="hero__text">Лёгкая защита от насекомых, которая не спорит с интерьером. Подберите конструкцию под свой
+        проём и представьте, как изменится пространство.</p>
+      <div class="hero__cta">
+        <button class="hero__btn hero__btn--primary js-open-modal">
+          Обсудить проект
+        </button>
+        <a class="hero__btn hero__btn--ghost" href="#gallery">Смотреть решения</a>
+      </div>
+      <div class="hero__stats">
+        <div><b>01</b><span>Лаконичный профиль</span></div>
+        <div><b>02</b><span>Удобное открывание</span></div>
+        <div><b>03</b><span>Для разных проёмов</span></div>
+      </div>
+    </div>
+    <!-- Панель слайдера -->
+    <div class="hero__bottom">
+      <div class="hero__bottom-in">
+        <p class="hero__caption" id="heroCaption"></p>
+        <div class="hero__nav">
+          <button aria-label="Предыдущий слайд" class="hero__arrow hero__prev">
+            ←
+          </button>
+          <div class="hero__dots" id="heroDots"></div>
+          <button aria-label="Следующий слайд" class="hero__arrow hero__next">
+            →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== БЕГУЩАЯ СТРОКА ========== -->
+  <div aria-hidden="true" class="marquee">
+    <div class="marquee__track">
+      <span>Сетка-плиссе</span><span>Окна и двери</span><span>Полотно «Антикошка»</span><span>Выход на
+        террасу</span><span>Компактное складывание</span><span>Профиль под интерьер</span>
+      <span>Сетка-плиссе</span><span>Окна и двери</span><span>Полотно «Антикошка»</span><span>Выход на
+        террасу</span><span>Компактное складывание</span><span>Профиль под интерьер</span>
+    </div>
+  </div>
+  <!-- Преимущества -->
+  <section class="advantages-section" id="features">
+    <h2 class="section-title">Преимущества сеток-гармошек</h2>
+    <div class="advantages-grid">
+      <div class="advantage-card">
+        <div class="advantage-img" style="background-image: url(img/fs-pic1.svg)"></div>
+        <div class="advantage-content">
+          <h3>Эстетичный дизайн</h3>
+          <p>
+            Гармонично вписываются в любой интерьер, доступны в разных цветах
+          </p>
+        </div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-img" style="background-image: url(img/f-s_pic3.svg)"></div>
+        <div class="advantage-content">
+          <h3>Компактность</h3>
+          <p>Складывается в тонкий профиль, занимая минимум пространства</p>
+        </div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-img" style="background-image: url(img/f-s_pic2.svg)"></div>
+        <div class="advantage-content">
+          <h3>Большие проёмы</h3>
+          <p>Подходят для панорамных окон и террас шириной до 6 метров</p>
+        </div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-img" style="background-image: url(img/f-s_pic4.svg)"></div>
+        <div class="advantage-content">
+          <h3>Удобство</h3>
+          <p>Легко открываются, фиксируются в любом положении</p>
+        </div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-img" style="background-image: url(img/f-s_pic5.svg)"></div>
+        <div class="advantage-content">
+          <h3>Всесезонность</h3>
+          <p>Можно оставлять на зиму, устойчивы к морозам</p>
+        </div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-img" style="background-image: url(img/pic2.svg)"></div>
+        <div class="advantage-content">
+          <h3>Универсальность</h3>
+          <p>Монтируются на окна и двери из любого материала</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features Section -->
+  <section class="section-padding">
+    <h2 class="section-title">Почему именно наша сетка-гармошка?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon-box">
+          <span class="material-symbols-outlined">handyman</span>
+        </div>
+        <h3>Монтаж за 30 минут</h3>
+        <p>
+          Вам не нужно быть профи. Понятная инструкция и минимум
+          инструментов позволят установить систему самостоятельно.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box">
+          <span class="material-symbols-outlined">touch_app</span>
+        </div>
+        <h3>Легкость управления</h3>
+        <p>
+          Сетка плавно и бесшумно скользит по направляющим —
+          управлять проемом можно движением одного пальца.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box">
+          <span class="material-symbols-outlined">clean_hands</span>
+        </div>
+        <h3>Минимум хлопот</h3>
+        <p>
+          Поддерживать чистоту проще простого: достаточно изредка протирать
+          полотно влажной губкой или пылесосом.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box">
+          <span class="material-symbols-outlined">ac_unit</span>
+        </div>
+        <h3>Зимует на окне</h3>
+        <p>
+          Сетку не нужно снимать на зиму. Она просто собирается
+          в кассету, оставаясь под защитой алюминиевого профиля.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box">
+          <span class="material-symbols-outlined">aspect_ratio</span>
+        </div>
+        <h3>Любые размеры</h3>
+        <p>
+          Изготавливаем системы высотой до 3 м и шириной
+          до 6 м. Идеально для террас и панорамных окон.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box">
+          <span class="material-symbols-outlined">palette</span>
+        </div>
+        <h3>Стиль в деталях</h3>
+        <p>
+          Узкий профиль почти незаметен. Возможна покраска в любой цвет
+          RAL или ламинация под дерево в тон окон.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box">
+          <span class="material-symbols-outlined">verified</span>
+        </div>
+        <h3>Служит годами</h3>
+        <p>
+          Износостойкое полотно и прочный алюминиевый профиль гарантируют
+          надежную работу на десятилетия.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box">
+          <span class="material-symbols-outlined">settings_backup_restore</span>
+        </div>
+        <h3>Ремонтопригодность</h3>
+        <p>
+          Конструкция разборная: если полотно повредится, его можно заменить,
+          не покупая новую систему целиком.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box">
+          <span class="material-symbols-outlined">savings</span>
+        </div>
+        <h3>Выгода напрямую</h3>
+        <p>
+          Мы сами производим системы, поэтому вы получаете лучшую
+          цену без переплат посредникам.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ========== ГАЛЕРЕЯ РАБОТ ========== -->
+  <section class="gallery-section" id="gallery">
+    <div class="gallery-container">
+      <div class="gallery-header">
+        <span class="gallery-badge">ИДЕИ ДЛЯ ВАШЕГО ПРОСТРАНСТВА</span>
+        <h2 class="gallery-title">Сетка, которая становится частью дома</h2>
+        <p class="gallery-subtitle">От узкого окна до широкого выхода на террасу — посмотрите варианты оформления.
+          Изображения созданы для презентации дизайна.</p>
+      </div>
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">
+          Все работы
+        </button>
+        <button class="filter-btn" data-filter="windows">Окна</button>
+        <button class="filter-btn" data-filter="doors">Двери</button>
+        <button class="filter-btn" data-filter="terraces">Террасы</button>
+      </div>
+      <div class="gallery-grid">
+        <div aria-label="Открыть эскиз" class="gallery-item gallery-item--large" data-category="terraces"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Терраса загородного дома" role="button"
+          tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/brown_house5.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Терраса</span>
+              <h3>Выход на террасу</h3>
+              <p>6 × 2.8 м • Встречное открытие</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+        <div aria-label="Открыть эскиз" class="gallery-item gallery-item--tall" data-category="doors"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Черная входная дверь" role="button"
+          tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/black_door.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Двери</span>
+              <h3>Черная входная дверь</h3>
+              <p>1.2 × 2.4 м • Черный</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+        <div aria-label="Открыть эскиз" class="gallery-item" data-category="doors"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Панорамная стеклянная дверь" role="button"
+          tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/black_door2.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Двери</span>
+              <h3>Панорамная дверь</h3>
+              <p>2.5 × 2.6 м • Черный</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+        <div aria-label="Открыть эскиз" class="gallery-item" data-category="windows"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Балкон с коричневым профилем" role="button"
+          tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/brown_balcony.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Окна</span>
+              <h3>Балкон с коричневым профилем</h3>
+              <p>3 × 2.2 м • Коричневый</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+        <div aria-label="Открыть эскиз" class="gallery-item gallery-item--tall" data-category="windows"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Окно в кирпичном доме" role="button"
+          tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/brown_window.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Окна</span>
+              <h3>Окно в кирпичном доме</h3>
+              <p>1.4 × 1.6 м • Коричневый</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+        <div aria-label="Открыть эскиз" class="gallery-item gallery-item--wide" data-category="doors"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Входная группа кирпичного дома"
+          role="button" tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/dark_door.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Двери</span>
+              <h3>Входная группа</h3>
+              <p>1.8 × 2.4 м • Графит</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+        <div aria-label="Открыть эскиз" class="gallery-item" data-category="windows"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Белое окно в частном доме" role="button"
+          tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/galery_win1.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Окна</span>
+              <h3>Белое окно</h3>
+              <p>1.5 × 1.4 м • Белый</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+        <div aria-label="Открыть эскиз" class="gallery-item gallery-item--tall" data-category="doors"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Серая входная дверь" role="button"
+          tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/gray_door.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Двери</span>
+              <h3>Серая входная дверь</h3>
+              <p>1 × 2.3 м • Серый</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+        <div aria-label="Открыть эскиз" class="gallery-item" data-category="windows"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Окно в доме с деревянной отделкой"
+          role="button" tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/ginger_house.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Окна</span>
+              <h3>Дом с деревянной отделкой</h3>
+              <p>1.3 × 1.5 м • Белый</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+        <div aria-label="Открыть эскиз" class="gallery-item gallery-item--large" data-category="terraces"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Загородный дом с сетками-гармошками"
+          role="button" tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/house1.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Комплекс</span>
+              <h3>Панорамное остекление</h3>
+              <p>6 точек установки</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+        <div aria-label="Открыть эскиз" class="gallery-item" data-category="windows"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Балконное остекление" role="button"
+          tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/brown_balcony2.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Окна</span>
+              <h3>Балконное остекление</h3>
+              <p>2.8 × 2 м • Коричневый</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+        <div aria-label="Открыть эскиз" class="gallery-item" data-category="doors"
+          data-desc="Эскиз оформления проёма для презентации дизайна."
+          data-params="Подбор под размер проёма · визуализация" data-title="Современная входная группа" role="button"
+          tabindex="0">
+          <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/gallery/gray_door2.svg" />
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-content">
+              <span class="gallery-category">Двери</span>
+              <h3>Современная входная группа</h3>
+              <p>1.5 × 2.5 м • Серый</p>
+            </div>
+            <button aria-label="Открыть" class="gallery-zoom">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-cta">
+        <div class="gallery-cta-content">
+          <h3>Есть нестандартный проём?</h3>
+          <p>Покажем, как может выглядеть решение именно для него.</p>
+        </div>
+        <button class="gallery-cta-btn js-open-modal">Подобрать вариант ↗</button>
+      </div>
+    </div>
+  </section>
+  <div aria-label="Просмотр фото" aria-modal="true" class="gallery-lightbox" id="galleryLightbox" role="dialog">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-content">
+      <button aria-label="Закрыть" class="lightbox-close">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <button aria-label="Предыдущее фото" class="lightbox-nav lightbox-prev">
+        <span class="material-symbols-outlined">chevron_left</span>
+      </button>
+      <button aria-label="Следующее фото" class="lightbox-nav lightbox-next">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </button>
+      <div class="lightbox-image-wrap">
+        <img alt="" class="lightbox-image" src="" />
+      </div>
+      <div class="lightbox-info">
+        <span class="lightbox-category"></span>
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-desc"></p>
+        <p class="lightbox-params"></p>
+      </div>
+    </div>
+  </div>
+  <!-- ========== /ГАЛЕРЕЯ РАБОТ ========== -->
+  <!-- ========== ВИДЕО-ОБЗОРЫ ========== -->
+  <section class="video-section" id="video-reviews">
+    <div class="video-container">
+      <div class="video-header">
+        <span class="video-badge">Видео-обзоры</span>
+        <h2 class="video-title">Увидеть конструкцию в деталях</h2>
+        <p class="video-subtitle">Пример раздела для будущих видеообзоров: здесь можно показать движение полотна и
+          особенности открывания.</p>
+      </div>
+      <div class="video-grid">
+        <!-- Видео 1 -->
+        <div aria-label="Открыть пример видеоблока" class="video-item" data-video-type="demo" role="button"
+          tabindex="0">
+          <div class="video-thumbnail">
+            <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/preview1.svg" />
+            <div class="video-play-btn">
+              <span class="material-symbols-outlined">play_arrow</span>
+            </div>
+            <div class="video-duration">ЭСКИЗ</div>
+          </div>
+          <div class="video-info">
+            <h3>Как открывается сетка-плиссе</h3>
+            <p>Эскиз визуального блока. Видео для этой презентации не загружено.</p>
+          </div>
+        </div>
+        <!-- Видео 2 -->
+        <div aria-label="Открыть пример видеоблока" class="video-item" data-video-type="demo" role="button"
+          tabindex="0">
+          <div class="video-thumbnail">
+            <img alt="Иллюстрация варианта сетки-плиссе" loading="lazy" src="img/preview2.svg" />
+            <div class="video-play-btn">
+              <span class="material-symbols-outlined">play_arrow</span>
+            </div>
+            <div class="video-duration">ЭСКИЗ</div>
+          </div>
+          <div class="video-info">
+            <h3>Решение для выхода на террасу</h3>
+            <p>Эскиз визуального блока. Видео для этой презентации не загружено.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Video Lightbox -->
+  <div class="video-lightbox" id="videoLightbox">
+    <div class="video-lightbox-overlay"></div>
+    <div class="video-lightbox-content">
+      <button aria-label="Закрыть" class="video-lightbox-close">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="video-wrapper" id="videoWrapper"></div>
+    </div>
+  </div>
+  <!-- Opening Variants Section -->
+  <section class="config-section" id="how-it-works">
+    <h2 class="config-title">Как работает конструкция сетки-гармошки?</h2>
+    <div class="top-row">
+      <div class="bg-card text-left-block">
+        <div class="num-content">
+          <span class="big-num">4</span>
+          <span class="num-text">варианта<br />открывания</span>
+        </div>
+      </div>
+      <div class="bg-card main-card">
+        <img alt="Встречное открытие" decoding="async" loading="lazy" src="img/double-side.webp" />
+      </div>
+      <div class="bg-card text-right-block">
+        <p>выберите подходящий вариант</p>
+      </div>
+    </div>
+    <div class="bottom-row">
+      <div class="bg-card single-card">
+        <img alt="Боковое открытие" decoding="async" loading="lazy" src="img/left-side.webp" />
+      </div>
+      <div class="bg-card single-card">
+        <img alt="Боковое открытие" decoding="async" loading="lazy" src="img/right-side.webp" />
+      </div>
+      <div class="bg-card single-card">
+        <img alt="Вертикальное открытие" decoding="async" loading="lazy" src="img/top-down.webp" />
+      </div>
+    </div>
+  </section>
+  <!-- ========== КАЛЬКУЛЯТОР ========== -->
+  <section class="calc-section" id="calculator">
+    <div class="calc-container">
+      <div class="calc-header">
+        <span class="calc-badge">Онлайн-расчет</span>
+        <h2 class="calc-title">Калькулятор стоимости сетки-гармошки</h2>
+        <p class="calc-subtitle">Выберите проём, размеры и полотно — оцените работу калькулятора.</p>
+      </div>
+      <div class="calc-box">
+        <div class="calc-dots">
+          <div class="calc-dot active"></div>
+          <div class="calc-dot"></div>
+          <div class="calc-dot"></div>
+        </div>
+        <!-- ШАГ 1: куда -->
+        <div class="calc-step active" data-calc-step="1">
+          <h3 class="calc-step-title">Куда нужна сетка?</h3>
+          <div class="calc-options" data-calc-group="place">
+            <button class="calc-option" data-value="window" type="button">
+              Окна
+            </button>
+            <button class="calc-option" data-value="door" type="button">
+              Двери
+            </button>
+            <button class="calc-option" data-value="portal" type="button">
+              Портал
+            </button>
+            <button class="calc-option" data-value="gazebo" type="button">
+              Беседка
+            </button>
+          </div>
+          <div class="calc-nav">
+            <span></span>
+            <button class="calc-btn next" data-calc-next="" type="button">
+              Далее →
+            </button>
+          </div>
+        </div>
+        <!-- ШАГ 2: размер -->
+        <div class="calc-step" data-calc-step="2">
+          <h3 class="calc-step-title">Какой размер проема?</h3>
+          <div class="calc-sizes">
+            <div class="size-field">
+              <label for="calcWidth">Ширина, мм</label>
+              <input id="calcWidth" max="6000" min="600" step="50" type="number" value="1300" />
+              <small class="size-hint" id="widthHint">от 600 до 6000 мм</small>
+            </div>
+            <div class="size-x">×</div>
+            <div class="size-field">
+              <label for="calcHeight">Высота, мм</label>
+              <input id="calcHeight" max="2200" min="900" step="50" type="number" value="1700" />
+              <small class="size-hint" id="heightHint">от 900 до 2200 мм</small>
+            </div>
+          </div>
+          <p class="calc-area">
+            Площадь проема: <b id="calcArea">2,21 м²</b>
+          </p>
+          <div class="calc-nav">
+            <button class="calc-btn back" data-calc-prev="" type="button">
+              ← Назад
+            </button>
+            <button class="calc-btn next" data-calc-next="" type="button">
+              Далее →
+            </button>
+          </div>
+        </div>
+        <!-- ШАГ 3: полотно -->
+        <div class="calc-step" data-calc-step="3">
+          <h3 class="calc-step-title">Какой вид полотна?</h3>
+          <div class="calc-options" data-calc-group="mesh">
+            <button class="calc-option" data-value="standard" type="button">
+              Стандарт
+            </button>
+            <button class="calc-option" data-value="antidust" type="button">
+              Антипыль
+            </button>
+            <button class="calc-option" data-value="antecat" type="button">
+              Антикошка
+            </button>
+          </div>
+          <div class="calc-nav">
+            <button class="calc-btn back" data-calc-prev="" type="button">
+              ← Назад
+            </button>
+            <button class="calc-btn next" data-calc-result="" type="button">
+              Рассчитать
+            </button>
+          </div>
+        </div>
+        <!-- РЕЗУЛЬТАТ -->
+        <div class="calc-step" data-calc-step="4">
+          <div class="calc-result">
+            <p class="calc-result-label">Ориентир для выбранной конфигурации</p>
+            <div class="calc-result-price" id="calcPrice">0 ₽</div>
+            <p class="calc-result-note" id="calcSummary"></p>
+            <p class="calc-result-note small">Иллюстративный расчёт; не является предложением или актуальным прайсом.
+            </p>
+            <div class="calc-result-actions">
+              <button class="calc-btn order js-open-modal" type="button">Подобрать решение</button>
+              <button class="calc-btn back" data-calc-reset="" type="button">
+                Пересчитать
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="calc-error" id="calcError"></p>
+      </div>
+    </div>
+  </section>
+  <!-- Solutions Section -->
+  <section class="solutions-section" id="versatility">
+    <div class="solutions-bg" style='background-image: url("img/bg3.webp")'></div>
+    <div class="solutions-content">
+      <h2 class="solutions-title">Универсальна от и до</h2>
+      <div class="solutions-list">
+        <div class="solution-item">
+          <div class="item-number">1</div>
+          <div class="item-text">Окна — дышите свежим воздухом</div>
+        </div>
+        <div class="solution-item">
+          <div class="item-number">2</div>
+          <div class="item-text">Мансарды — комфорт на любом этаже</div>
+        </div>
+        <div class="solution-item">
+          <div class="item-number">3</div>
+          <div class="item-text">Порталы — любые размеры</div>
+        </div>
+        <div class="solution-item">
+          <div class="item-number">4</div>
+          <div class="item-text">Двери — защита 24/7</div>
+        </div>
+        <div class="solution-item">
+          <div class="item-number">5</div>
+          <div class="item-text">Беседки — отдых без насекомых</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contacts">
+    <div class="contact-container">
+      <div class="contact-header">
+        <h2>Представьте сетку для вашего пространства</h2>
+        <p>Ниже — пример оформления заявки. В этой презентации отправка отключена.</p>
+      </div>
+      <form autocomplete="off" class="inline-contact-form" data-demo="true" id="inlineContactForm" novalidate="">
+        <div class="form-row">
+          <div class="input-group">
+            <input aria-label="Поле недоступно: показ интерфейса без отправки данных" autocomplete="off"
+              id="inline-name" placeholder="Ваше имя" readonly="" type="text" />
+            <small class="error-msg" id="inline-name-error"></small>
+          </div>
+          <div class="input-group">
+            <input aria-label="Поле недоступно: показ интерфейса без отправки данных" autocomplete="off"
+              id="inline-phone" placeholder="+7 (___) ___-__-__" readonly="" type="text" />
+            <small class="error-msg" id="inline-phone-error"></small>
+          </div>
+        </div>
+        <button class="cta-button" type="submit">Посмотреть отклик</button>
+        <p class="form-note">Презентационный сайт: поля и отправка отключены. <a href="privacy.html">Подробнее</a></p>
+      </form>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="footer__container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="footer__logo" href="index.html">
+          <img alt="" class="footer__logo-img" decoding="async" loading="lazy" src="img/logo.svg" />
+          <span>Линия Плиссе</span>
+        </a>
+        <p class="footer__description">Сетки-плиссе для светлых окон и просторных выходов на террасу. Детали, которые
+          меняют ощущение дома.</p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__nav-column">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="#features">Преимущества</a></li>
+            <li><a href="#gallery">Наши решения</a></li>
+            <li><a href="#how-it-works">Как это работает</a></li>
+            <li><a href="#versatility">Универсальность</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-column">
+          <h3>Что дальше?</h3>
+          <ul>
+            <li><a href="#gallery">Варианты оформления</a></li>
+            <li><a href="#calculator">Калькулятор</a></li>
+            <li><a href="#contacts">Посмотреть форму</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <div class="footer__legal-links">
+          <a href="terms.html">О проекте</a>
+          <span class="divider">|</span>
+          <a href="privacy.html">О данных</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="portfolio-note">Концепт для портфолио: бренд вымышлен, изображения — иллюстрации, цены условные. Заявки не
+      принимаются.</p>
+  </footer>
+  <script defer="" src="js/app.js"></script>
+  <script defer="" src="js/calc.js"></script>
+</body>
+
+</html>
